@@ -1,49 +1,84 @@
-Regression-Based Particle Position Detection in Resistive Silicon Detectors
+Here’s a colorful version of your README.md with emojis to make it more engaging:
 
-Overview
+🎯 Regression-Based Particle Position Detection
 
-This project focuses on predicting the position of particles passing through a Resistive Silicon Detector (RSD). By extracting relevant features from signal data, we implement regression models to accurately determine particle positions.
+In Resistive Silicon Detectors
 
-Problem Description
+🛠️ Overview
+
+This project focuses on predicting the position of particles passing through a Resistive Silicon Detector (RSD). By extracting relevant features from signal data, we implemented regression models to accurately determine particle positions. 🧬✨
+
+📂 Problem Description
 
 The dataset consists of:
-	•	Training Set: 385,500 events with features like peak magnitudes (pmax), negative peaks (negpmax), delays (tmax), signal areas (area), and RMS values.
-	•	Evaluation Set: 128,500 events without target features.
+	•	🗂️ Training Set: 385,500 events with features:
+	•	Peak magnitudes (pmax), negative peaks (negpmax), delays (tmax), signal areas (area), and RMS values (rms).
+	•	📊 Evaluation Set: 128,500 events without target features (x, y).
 
-The features are recorded by 12 pads, with 18 readings per feature, some of which include noise. The target values are the x and y positions of the particles.
+The goal 🎯: Predict the particle’s x and y positions using the training data.
 
-Approach
+🚀 Approach
 
-1. Preprocessing
-	•	Noise Identification:
-	•	Analyzed statistical properties to detect noisy columns.
-	•	Dropped noisy features and infrequent event rows.
-	•	Feature Selection:
-	•	Removed less relevant features (e.g., RMS values) to improve model performance.
+🧹 1. Preprocessing
+	•	🧪 Noise Identification:
+	•	Analyzed statistical properties to detect noisy features.
+	•	Dropped noisy columns and rare event rows.
+	•	🏗️ Feature Selection:
+	•	Removed less relevant features (e.g., RMS values) to enhance model performance.
 
-2. Modeling
-	•	Models:
-	•	Ridge Regression: Baseline linear model.
-	•	Random Forest Regression: Ensemble tree-based model.
-	•	XGBoost Regression: Gradient boosting algorithm optimized for speed and performance.
-	•	Evaluation Metric: Euclidean distance between actual and predicted particle positions.
+🤖 2. Modeling
+	•	Models Used:
+	•	🟦 Ridge Regression: Baseline linear model.
+	•	🌲 Random Forest Regression: Ensemble tree-based model.
+	•	🐍 XGBoost Regression: Gradient boosting algorithm optimized for speed and accuracy.
+	•	Metric:
+📐 Euclidean Distance between actual and predicted particle positions.
 
-3. Hyperparameter Tuning
-	•	Ridge and Random Forest models tuned with GridSearchCV.
-	•	XGBoost tuned with Optuna for efficient exploration of hyperparameter space.
+🎛️ 3. Hyperparameter Tuning
+	•	🎯 Ridge & Random Forest: Tuned using GridSearchCV.
+	•	⚡ XGBoost: Tuned using Optuna for efficient parameter optimization.
 
-Results
-	•	Ridge Regression: Score = 18.157 (baseline).
-	•	Random Forest Regression: Score = 5.170.
-	•	XGBoost Regression: Score = 4.959 (best-performing model).
+📈 Results
+	•	Ridge Regression: 🎯 Score = 18.157 (Baseline)
+	•	Random Forest Regression: 🌟 Score = 5.170
+	•	XGBoost Regression: 🏆 Best Score = 4.959
 
-Key Insights
-	•	XGBoost outperformed other models due to its flexibility and efficiency.
-	•	Preprocessing and feature selection significantly improved model accuracy.
-	•	Future work could include advanced preprocessing techniques and additional hyperparameter optimization.
+🔍 Key Insights
+	•	🥇 XGBoost provided the best performance due to its adaptability and efficiency.
+	•	✨ Preprocessing played a critical role in boosting model accuracy.
+	•	💡 Future improvements could involve advanced noise handling and additional optimization techniques.
 
-How to Run
+📝 How to Run
 
-Requirements
-	•	Python 3.8+
-	•	Libraries: numpy, pandas, scikit-learn, xgboost, optuna, matplotlib
+⚙️ Requirements
+	•	Python 3.8+ 🐍
+	•	Required libraries:
+numpy, pandas, scikit-learn, xgboost, optuna, matplotlib
+
+💻 Steps to Run
+	1.	Clone the repository:
+
+git clone https://github.com/yeganebagheri/Regression-based-Particle-Position-Detection.git
+cd Regression-based-Particle-Position-Detection
+
+
+	2.	Install dependencies:
+
+pip install -r requirements.txt
+
+
+	3.	Open and run the notebook:
+	•	Launch Winter_Project.ipynb in Jupyter Notebook.
+	•	Follow the instructions for preprocessing, model training, and evaluation. 🎯
+
+👥 Authors
+	•	🧑‍🔬 Chiara Roberta Casale
+✉️ Email: s322574@studenti.polito.it
+	•	🧑‍🔬 Yegane Bagheri
+✉️ Email: s327779@studenti.polito.it
+
+📚 References
+	1.	📄 Tornago et al., “Silicon sensors with resistive read-out: Machine learning techniques for ultimate spatial resolution,” Nuclear Instruments and Methods in Physics Research Section A, 2023.
+	2.	📘 James et al., An Introduction to Statistical Learning, Springer, 2013.
+	3.	📊 Béntéjac et al., “A comparative analysis of gradient boosting algorithms,” Artificial Intelligence Review, 2021.
+	4.	🔍 Akiba et al., “Optuna: A next-generation hyperparameter optimization framework,” Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, 2019.
