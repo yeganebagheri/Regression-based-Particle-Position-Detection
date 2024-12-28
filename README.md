@@ -46,8 +46,6 @@ The goal 🎯: Predict the particle’s x and y positions using the training dat
 	•	✨ Preprocessing played a critical role in boosting model accuracy.
 	•	💡 Future improvements could involve advanced noise handling and additional optimization techniques.
 
-📝 How to Run
-
 ⚙️ Requirements
 	•	Python 3.8+ 🐍
 	•	Required libraries:
