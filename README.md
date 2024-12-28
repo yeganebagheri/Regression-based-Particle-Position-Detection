@@ -1,5 +1,3 @@
-Here’s a colorful version of your README.md with emojis to make it more engaging:
-
 🎯 Regression-Based Particle Position Detection
 
 In Resistive Silicon Detectors
