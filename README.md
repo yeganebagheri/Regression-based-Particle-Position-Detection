@@ -53,21 +53,6 @@ The goal 🎯: Predict the particle’s x and y positions using the training dat
 	•	Required libraries:
 numpy, pandas, scikit-learn, xgboost, optuna, matplotlib
 
-💻 Steps to Run
-	1.	Clone the repository:
-
-git clone https://github.com/yeganebagheri/Regression-based-Particle-Position-Detection.git
-cd Regression-based-Particle-Position-Detection
-
-
-	2.	Install dependencies:
-
-pip install -r requirements.txt
-
-
-	3.	Open and run the notebook:
-	•	Launch Winter_Project.ipynb in Jupyter Notebook.
-	•	Follow the instructions for preprocessing, model training, and evaluation. 🎯
 
 👥 Authors
 	•	🧑‍🔬 Chiara Roberta Casale
